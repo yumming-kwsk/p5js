@@ -33,8 +33,8 @@ function draw() {
   translate(width/2, height/2);
 
   push();
-  let num = 60;
-  let r = 150;
+  let num = 46;
+  let r = 110;
   for (let i = 0; i < num; i++) {
     let move = map(sin(frameCount*((i+num)/25)),-1,1,1,1.1);
     stroke(palette[2]);
@@ -50,7 +50,7 @@ function draw() {
     }
    }
 
-    let fixed_r = 170;
+    let fixed_r = 140;
     for (let i = 0; i < 16; i++) {
       let sX = cos(star/i)*fixed_r;
       let sY = sin(star/i)*fixed_r;
@@ -63,14 +63,14 @@ function draw() {
       }else{
         circle(sX,sY,8);
       }
-        circle(sX*-1.15,sY*1.15,2);
-        circle(sX*1.15,sY*-1.15,2);
+        circle(sX*-1.25,sY*1.25,2);
+        circle(sX*1.25,sY*-1.25,2);
     }
     star+=2;
    stroke(palette[2]);
    noFill();
    circle(0,0,fixed_r*2);
-   circle(0,0,fixed_r*1.1);
+   circle(0,0,fixed_r);
 
   rotate(angle);
 
@@ -78,12 +78,12 @@ pop();
 
 fill(0);
 noStroke();
-circle(0,0,100);
+circle(0,0,80);
 let keyC = map(sin(frameCount),-1,1,120,255);
   fill(keyC,keyC-30,255);
   noStroke();
-  circle(0,-30,45);
-  triangle(-22, 45, 0, -50, 22, 45);
+  circle(0,-25,35);
+  triangle(-18, 35, 0, -40, 18, 35);
   pop();
 
 
@@ -95,10 +95,10 @@ let keyC = map(sin(frameCount),-1,1,120,255);
   circle(sp/1.5,height-sp/1.5,sp*1.4);
 
 
-  drawKey(sp/1.5,sp/1.5,32,-45);
-  drawKey(width-sp/1.5,sp/1.5,32,45);
-  drawKey(width-sp/1.5,height-sp/1.5,32,135);
-  drawKey(sp/1.5,height-sp/1.5,32,-135);
+  drawKey(sp/1.5,sp/1.5,24,-45);
+  drawKey(width-sp/1.5,sp/1.5,24,45);
+  drawKey(width-sp/1.5,height-sp/1.5,24,135);
+  drawKey(sp/1.5,height-sp/1.5,24,-135);
 
   fill(palette[2]);
   noStroke();
