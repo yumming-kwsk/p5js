@@ -40,20 +40,20 @@ function draw() {
 
 
   let cSize = 35;
-  let cols = width / cSize - 1;
-  let rows = width / cSize;
+  let cols = width / cSize*2;
+  let rows = height / cSize*2;
   noStroke();
   for (let r = 0; r < rows; r++) {
     for (let c = 0; c < cols; c++) {
       let x = r * cSize;
       let y = c * cSize;
       let d = dist(x, y, mouseX, mouseY);
-      let nd = map(d, 0, maxDist, 0, 5);
+      let nd = map(d, 0, maxDist, 0, 4);
       fill(palette[0]);
       // drawStar(-width / 2 + x, 280, nd, 6);
       // drawStar(-width / 2 + x, -280, nd, 6);
-      drawStar(-width/2 + x, 300, nd, 6);
-      drawStar(-width / 2 + x, -300, nd, 6);
+      drawStar(-width/2 + x, -height/2+40, nd, 6);
+      drawStar(-width / 2 + x, height/2-40, nd, 6);
       fill(palette[2]);
       circle(x - width / 2, y - height / 2, 1);
     }
