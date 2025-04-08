@@ -24,7 +24,7 @@ function draw() {
   background(0);
 
 
-  let sp = 60;
+  let sp = 50;
   rect(width/2,height/2,width-sp,height-sp);
   fill(0);
   rect(width/2,height/2,width-sp-2,height-sp-2);
@@ -50,7 +50,7 @@ function draw() {
     }
    }
 
-    let fixed_r = 140;
+    let fixed_r = 130;
     for (let i = 0; i < 16; i++) {
       let sX = cos(star/i)*fixed_r;
       let sY = sin(star/i)*fixed_r;
