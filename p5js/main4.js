@@ -50,7 +50,7 @@ function draw() {
     }
    }
 
-    let fixed_r = 130;
+    let fixed_r = height/5;
     for (let i = 0; i < 16; i++) {
       let sX = cos(star/i)*fixed_r;
       let sY = sin(star/i)*fixed_r;
