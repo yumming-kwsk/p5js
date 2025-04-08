@@ -24,7 +24,7 @@ function draw() {
   background(0);
 
 
-  let sp = 50;
+  let sp = 40;
   rect(width/2,height/2,width-sp,height-sp);
   fill(0);
   rect(width/2,height/2,width-sp-2,height-sp-2);
