@@ -162,7 +162,7 @@ black-bg(ハンバーガーメニュー解除用bg)
 /* Responsive */
   @media (min-width: 769px) {
   .sp-nav {
-    width: 25%; /* 出てくるスライドメニューの幅 */
+    width: 35%; /* 出てくるスライドメニューの幅 */
     font-size: 1.6rem;
   }
   }
