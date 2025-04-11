@@ -61,7 +61,7 @@ sp-nav(ナビ)
   position: fixed;
   right: -100%; /*ハンバーガーがクリックされる前はWindow右側に隠す*/
   top: 0;
-  width: 75%; /* 出てくるスライドメニューの幅 */
+  width: 80%; /* 出てくるスライドメニューの幅 */
   height: 100vh;
   background-color: rgb(10 10 20 / 70%);
   transition: all 0.5s;
@@ -110,6 +110,21 @@ sp-nav(ナビ)
 
 .fa-brands {
   font-size: 2rem;
+  margin-right: 4px;
+}
+
+.suzuri {
+  display: inline;
+  position: relative;
+  top:2px;
+  width: 1.72rem;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.comment .szr {
+  font-size: 0.8rem;
+  color: #ffffff;
 }
 
 .sp-nav ul li a {
