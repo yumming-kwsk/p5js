@@ -68,7 +68,7 @@ sp-nav(ナビ)
   z-index: 200;
   overflow-y: auto; /* メニューが多くなったらスクロールできるように */
   color: #ffffff;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 .sp-nav ul {
