@@ -10,7 +10,21 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
   </head>
   <body>
-    
+<style>
+    html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* スクロール禁止 */
+}
+
+canvas {
+  display: block;   /* 余計な隙間を消す */
+  position: fixed;  /* 画面に固定 */
+  top: 0;
+  left: 0;
+}
+ </style>   
     <div id="nav-wrapper" class="nav-wrapper">
       <div class="hamburger" id="js-hamburger">
         <span class="hamburger__line hamburger__line--1"></span>
